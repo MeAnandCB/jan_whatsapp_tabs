@@ -1,7 +1,9 @@
+import 'package:first_app/dummy_db.dart';
 import 'package:flutter/material.dart';
 
 class CustomChatCard extends StatelessWidget {
-  const CustomChatCard({super.key});
+  const CustomChatCard({super.key, required this.index});
+  final int index;
 
   @override
   Widget build(BuildContext context) {
@@ -20,7 +22,7 @@ class CustomChatCard extends StatelessWidget {
               ),
               Column(
                 children: [
-                  Text("User Name"),
+                  Text(DummyDb.usersChatList[index]["user_name"]),
                   SizedBox(
                     height: 10,
                   ),

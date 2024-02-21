@@ -24,7 +24,7 @@ class CustomChatCard extends StatelessWidget {
                   SizedBox(
                     height: 10,
                   ),
-                  Text("Messages"),
+                  Text("Messagess"),
                 ],
               ),
             ],
